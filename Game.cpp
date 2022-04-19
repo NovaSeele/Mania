@@ -5,17 +5,15 @@
 #include"Key3.h"
 #include"Key4.h"
 #include"Map.h"
+#include"KeyPattern.h"
 SDL_Renderer* Game::renderer = nullptr;
 
-Game::Game()
-{
 
-}
+Game::Game()
+{}
 
 Game::~Game()
-{
-
-}
+{}
 
 void Game::init(const char* title, int width, int height, bool fullscreen)
 {
@@ -38,12 +36,12 @@ void Game::init(const char* title, int width, int height, bool fullscreen)
 		isRunning = true;
 	}
 
-	//circle = TextureManager::LoadTexture("Image/cursor.png", renderer);
 	key1 = new Key1("Image/Key1-4.png");
 	key2 = new Key2("Image/Key2-3.png");
 	key3 = new Key3("Image/Key2-3.png");
 	key4 = new Key4("Image/Key1-4.png");
 	background = new Map("Image/background.png");
+	pattern = new Pattern();
 }
 
 void Game::handleEvents()
@@ -58,6 +56,7 @@ void Game::handleEvents()
 		isRunning = false;
 		break;
 	case SDL_KEYDOWN:
+		pattern->patterncount();
 		switch (event.key.keysym.sym)
 		{
 		case SDLK_a:
@@ -87,6 +86,10 @@ void Game::handleEvents()
 
 void Game::update()
 {
+	pattern->changepattern();
+	pattern->update();
+
+
 	key1->update();
 	key2->update();
 	key3->update();
@@ -101,7 +104,7 @@ void Game::render()
 	key1->render();
 	key2->render();
 	key3->render();
-	key4->render();	//SDL_RenderCopy(renderer, circle, NULL, &destR);
+	key4->render();	 
 	SDL_RenderPresent(renderer);							
 }
 

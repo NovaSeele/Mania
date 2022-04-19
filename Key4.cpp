@@ -21,7 +21,7 @@ Key4::~Key4()
 
 void Key4::speedup()
 {
-    speed += 0.5;
+    speed += 1;
 }
 
 void Key4::reset()

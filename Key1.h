@@ -3,22 +3,22 @@
 #include<random>
 
 
-const double Key1_WIDTH = 158;
-const double Key1_HEIGHT = 40;
+const int Key1_WIDTH = 158;
+const int Key1_HEIGHT = 40;
 
-const double KEY_1_XPOS = 0;
-const double KEY_1_YPOS = 1;    //write random function here
+const int KEY_1_XPOS = 0;
+const int KEY_1_YPOS = 1;    //write random function here
 
-const double Key1_SPEED = 10;
+const int Key1_SPEED = 10;
 
 
 struct Key1
 {
-    double speed;  // the speed of key
+    int speed;  // the speed of key
 
     // ---- position of Key ---- //
-    double xpos;
-    double ypos;
+    int xpos;
+    int ypos;
     // -----------------------------//
 
     SDL_Texture* image; // image of key

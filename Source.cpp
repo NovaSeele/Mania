@@ -4,8 +4,8 @@ Game* game = nullptr;
 
 int main(int argc, char* argv[])
 {
-	const double FPS = 60;
-	const double FPSDelay = 1000 / FPS;
+	const int FPS = 60;
+	const int FPSDelay = 1000 / FPS;
 	Uint32 FPSStart;
 	int FPSTime;
 

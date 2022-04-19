@@ -151,6 +151,7 @@
     <ClCompile Include="Key2.cpp" />
     <ClCompile Include="Key3.cpp" />
     <ClCompile Include="Key4.cpp" />
+    <ClCompile Include="KeyPattern.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Key1.cpp" />
     <ClCompile Include="Score.cpp" />
@@ -159,10 +160,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clock.h" />
-    <ClInclude Include="Game.h" />
     <ClInclude Include="Key2.h" />
     <ClInclude Include="Key3.h" />
     <ClInclude Include="Key4.h" />
+    <ClInclude Include="KeyPattern.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Key1.h" />
     <ClInclude Include="Score.h" />

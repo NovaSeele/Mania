@@ -20,7 +20,7 @@ public:
 
 	static SDL_Renderer* renderer;
 
-private:
+private:  
 	bool isRunning = false;
 	SDL_Window* window;
 };

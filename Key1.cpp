@@ -22,7 +22,7 @@ Key1::~Key1()
 
 void Key1::speedup()
 {
-    speed+=0.5;
+    speed+=1;
 }
 
 void Key1::reset()
