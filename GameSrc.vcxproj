@@ -78,8 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\C++ Project\Aim Trainer\SDL2-devel-2.0.20-VC %281%29\SDL2-2.0.20\include;D:\C++ Project\Aim Trainer\SDL2_image-devel-2.0.5-VC %281%29\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\C++ Project\Aim Trainer\SDL2-devel-2.0.20-VC %281%29\SDL2-2.0.20\lib\x64;D:\C++ Project\Aim Trainer\SDL2_image-devel-2.0.5-VC %281%29\SDL2_image-2.0.5\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\C++ Project\Aim Trainer\SDL2_ttf-devel-2.0.18-VC\SDL2_ttf-2.0.18\include;D:\C++ Project\Aim Trainer\SDL2-devel-2.0.20-VC %281%29\SDL2-2.0.20\include;D:\C++ Project\Aim Trainer\SDL2_image-devel-2.0.5-VC %281%29\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\C++ Project\Aim Trainer\SDL2_ttf-devel-2.0.18-VC\SDL2_ttf-2.0.18\lib\x64;D:\C++ Project\Aim Trainer\SDL2-devel-2.0.20-VC %281%29\SDL2-2.0.20\lib\x64;D:\C++ Project\Aim Trainer\SDL2_image-devel-2.0.5-VC %281%29\SDL2_image-2.0.5\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -125,7 +125,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\C++ Project\Aim Trainer\SDL2_mixer-devel-2.0.4-VC\SDL2_mixer-2.0.4\lib\x64;D:\C++ Project\Aim Trainer\SDL2_ttf-devel-2.0.18-VC\SDL2_ttf-2.0.18\lib\x64;D:\C++ Project\Aim Trainer\SDL2_image-devel-2.0.5-VC %281%29\SDL2_image-2.0.5\lib\x64;D:\C++ Project\Aim Trainer\SDL2-devel-2.0.20-VC %281%29\SDL2-2.0.20\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\C++ Project\Aim Trainer\SDL2_ttf-devel-2.0.18-VC\SDL2_ttf-2.0.18\lib\x64;D:\C++ Project\Aim Trainer\SDL2_mixer-devel-2.0.4-VC\SDL2_mixer-2.0.4\lib\x64;D:\C++ Project\Aim Trainer\SDL2_image-devel-2.0.5-VC %281%29\SDL2_image-2.0.5\lib\x64;D:\C++ Project\Aim Trainer\SDL2-devel-2.0.20-VC %281%29\SDL2-2.0.20\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -146,27 +146,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Clock.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Key2.cpp" />
-    <ClCompile Include="Key3.cpp" />
-    <ClCompile Include="Key4.cpp" />
     <ClCompile Include="KeyPattern.cpp" />
+    <ClCompile Include="Lightning.cpp" />
     <ClCompile Include="Map.cpp" />
-    <ClCompile Include="Key1.cpp" />
-    <ClCompile Include="Score.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Clock.h" />
-    <ClInclude Include="Key2.h" />
-    <ClInclude Include="Key3.h" />
-    <ClInclude Include="Key4.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="KeyPattern.h" />
+    <ClInclude Include="Lightning.h" />
     <ClInclude Include="Map.h" />
-    <ClInclude Include="Key1.h" />
-    <ClInclude Include="Score.h" />
     <ClInclude Include="TextureManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

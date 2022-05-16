@@ -1,8 +1,12 @@
 #pragma once
 
-#include "SDL.h"
-#include <iostream>
+#include<SDL.h>
+#include<iostream>
 #include<SDL_image.h>
+#include<SDL_ttf.h>
+#include<SDL_mixer.h>
+#include<string>
+#include<vector>
 
 class Game
 {
@@ -23,4 +27,7 @@ public:
 private:  
 	bool isRunning = false;
 	SDL_Window* window;
+	std::string string = "300";
+	int ComboShow = 0;
+	int ScoreShow = 0;
 };
